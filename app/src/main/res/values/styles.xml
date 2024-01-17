@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/cyan</item>
+        <item name="android:textColor">@color/cyan</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Color del fondo -->
+        <item name="android:colorBackground">@color/less_black</item>
+        <!-- Color del texto -->
+        <item name="android:textColor">@color/cyan</item>
+        <!-- Bordes redondeados -->
+        <item name="android:windowBackground">@drawable/custom_dialog_content</item>
+        <!-- Color del texto de los botones -->
+        <item name="colorAccent">#FFFFFF</item>
+
+        <!-- Estilos específicos para versiones antiguas (antes de Android 7.0) -->
+        <item name="android:textColorPrimary">@color/cyan</item>
+        <item name="android:textColorSecondary">@color/cyan</item>
+        <item name="android:buttonBarButtonStyle">@style/ButtonBarButtonStyle</item>
+    </style>
+
+    <!-- Nuevo estilo para versiones antiguas del botón del diálogo -->
+    <style name="ButtonBarButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/cyan</item>
+    </style>
+
+    <!-- En tu archivo styles.xml -->
+    <style name="Button.Cyan" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/cyan</item>
+    </style>
+
+
+</resources>

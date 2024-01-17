@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Reto</string>
+    <string name="buscador">Buscar</string>
+    <string name="fav">Favoritos</string>
+    <string name="filt">Marcadores</string>
+    <string name="cam">Camaras</string>
+    <string name="inci">Incidencias</string>
+    <string name="email">Email</string>
+    <string name="contra">Contraseña</string>
+    <string name="olvido">¿Has olvidado tu contraseña?</string>
+    <string name="inicio">Iniciar sesión</string>
+    <string name="crear">Crear Cuenta</string>
+    <string name="nomb">Nombre</string>
+    <string name="apelli">Apellidos</string>
+    <string name="acept">Aceptar</string>
+</resources>

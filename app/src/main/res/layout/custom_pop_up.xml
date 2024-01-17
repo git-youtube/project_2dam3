@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_dialog_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/estrella_vacia"/>
+
+
+    <TextView
+        android:id="@+id/tipoIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de incidente:"
+        android:textColor="#00FFFF"
+        android:padding="10dp"
+        android:layout_below="@id/imageView" />
+
+    <TextView
+        android:id="@+id/causaIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Causa del incidente:"
+        android:layout_below="@id/tipoIncidencia"
+        android:textColor="#00FFFF"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/ciudadIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad:"
+        android:layout_below="@id/causaIncidencia"
+        android:textColor="#00FFFF"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/nivelIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel de incidencia:"
+        android:layout_below="@id/ciudadIncidencia"
+        android:textColor="#00FFFF"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/carreteraIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carretera:"
+        android:layout_below="@id/nivelIncidencia"
+        android:textColor="#00FFFF"
+        android:padding="10dp" />
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:layout_below="@id/carreteraIncidencia"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/cyan"/>
+
+
+</RelativeLayout>
