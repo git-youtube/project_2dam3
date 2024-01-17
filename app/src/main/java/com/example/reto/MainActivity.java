@@ -400,10 +400,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 TextView nombreCamara = dialog.findViewById(R.id.nombreCamara);
                 TextView carreteraCamara = dialog.findViewById(R.id.carretera);
                 TextView kilometroCamara = dialog.findViewById(R.id.kilometro);
+                String imageUrl;
 
                 nombreCamara.setText("Nombre Cámara: " + listaCamaras.get(i).getCameraName());
                 carreteraCamara.setText("Carretera: " + listaCamaras.get(i).getRoad());
                 kilometroCamara.setText("Kilómetro: " + listaCamaras.get(i).getKilometer());
+                imageUrl=listaCamaras.get(i).getUrlImage();
                 flipper=dialog.findViewById(R.id.viewFlipper);
                 imagenCamara = dialog.findViewById(R.id.imageTransicion);
                 imagenCamara.setOnClickListener(new View.OnClickListener() {
@@ -416,9 +418,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         WebView webView = dialog.findViewById(R.id.imageCamara);
                         WebSettings webSettings = webView.getSettings();
                         webSettings.setJavaScriptEnabled(true); // Habilita JavaScript si es necesario
-
-                        String html = "<html><body><img src=\"" + "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/a/ad/latest/20211225033009/EP1181_Gengar_de_Ash.png/640px-EP1181_Gengar_de_Ash.png" + "\" width=\"100%\" height=\"100%\"></body></html>";
-                        webView.loadData(html, "text/html", "UTF-8");
+                        Log.d(TAG, "url: "+ imageUrl);
+                        webView.loadUrl('"'+imageUrl+'"');
 
                     }
 
