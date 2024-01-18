@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_dialog_content">
+
+    <TextView
+        android:id="@+id/tipoIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de incidente:"
+        android:textColor="#00FFFF"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTipoIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tipoIncidencia"
+        android:layout_alignBaseline="@id/tipoIncidencia"/>
+
+    <TextView
+        android:id="@+id/causaIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Causa del incidente:"
+        android:layout_below="@id/editTipoIncidencia"
+        android:textColor="#00FFFF"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editCausaIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/causaIncidencia"
+        android:layout_alignBaseline="@id/causaIncidencia"/>
+
+    <TextView
+        android:id="@+id/ciudadIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad:"
+        android:layout_below="@id/editCausaIncidencia"
+        android:textColor="#00FFFF"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editCiudadIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ciudadIncidencia"
+        android:layout_alignBaseline="@id/ciudadIncidencia"/>
+
+    <TextView
+        android:id="@+id/nivelIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel de incidencia:"
+        android:layout_below="@id/editCiudadIncidencia"
+        android:textColor="#00FFFF"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editNivelIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nivelIncidencia"
+        android:layout_alignBaseline="@id/nivelIncidencia"/>
+
+    <TextView
+        android:id="@+id/carreteraIncidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carretera:"
+        android:layout_below="@id/editNivelIncidencia"
+        android:textColor="#00FFFF"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editCarreteraIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/carreteraIncidencia"
+        android:layout_alignBaseline="@id/carreteraIncidencia"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="102dp"
+        android:layout_height="74dp"
+        android:layout_below="@id/editCarreteraIncidencia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/boton_camara" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aceptar"
+        android:layout_below="@id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/cyan"/>
+</RelativeLayout>

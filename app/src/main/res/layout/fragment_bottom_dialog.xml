@@ -6,6 +6,7 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/filt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -26,7 +27,15 @@
         style="@style/CheckBoxStyle"
         android:text="@string/inci" />
 
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CheckBoxStyle"
+        android:text="Incidencias Usuarios" />
+
     <TextView
+        android:id="@+id/favs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"

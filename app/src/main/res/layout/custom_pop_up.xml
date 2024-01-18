@@ -4,22 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/custom_dialog_content">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="30dp"
-        android:layout_height="26dp"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/estrella_vacia"/>
-
-
     <TextView
         android:id="@+id/tipoIncidencia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tipo de incidente:"
         android:textColor="#00FFFF"
-        android:padding="10dp"
-        android:layout_below="@id/imageView" />
+        android:padding="10dp"/>
 
     <TextView
         android:id="@+id/causaIncidencia"

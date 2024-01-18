@@ -18,8 +18,13 @@ public class Adaptador extends BaseAdapter {
 
     public Adaptador(Context context, ArrayList<String> itemList) {
         this.context = context;
-        this.itemList = itemList;
+        if (itemList != null) {
+            this.itemList = itemList;
+        } else {
+            this.itemList = new ArrayList<>();
+        }
     }
+
 
     @Override
     public int getCount() {
